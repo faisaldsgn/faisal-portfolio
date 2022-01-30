@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/faisal-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Faisal's Portfolio</title>
+    <script defer src="/node_modules/@alpinejs/intersect/dist/cdn.min.js"></script>
+    <script defer src="/node_modules/alpinejs/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ shown: false, hide: false, splash: true, isDark: false}">
+    <!-- <div id="app"></div> -->
+
+    <!-- Dark Mode -->
+    <div :class="isDark ? 'dark' : '' ">
+
+        <!-- Splash Screen -->
+        <dive x-intersect:enter="splash = false" x-show="splash" x-transition:leave="transition ease-in-out duration-700 translate-y-full"
+            class="fixed min-h-screen w-full bg-faisal-brand z-50"></dive>
+
+        <!-- Navbar -->
+        <nav class="fixed w-full bg-white z-10"
+            :class="hide ? 'shadow-lg shadow-faisal-brand/5 transition duration-500' : '' ">
+            <div class="max-w-6xl m-auto flex justify-between items-center p-5">
+                <a href="/">
+                    <img src="/assets/faisal-logo.svg" alt="faisal-logo" class="w-12"></a>
+                <div class="flex items-center space-x-5">
+                    <a href="#aboutMe"
+                        class="text-md font-normal text-indigo-900 px-5 py-3 rounded-3xl hover:bg-indigo-50 transition duration-300">About
+                        Me</a>
+                    <a href="#myWork"
+                        class="text-md font-normal text-indigo-900 px-5 py-3 rounded-3xl hover:bg-indigo-50 transition  duration-300">My
+                        Work</a>
+                    <a href="mailto:faisaljob06@gmail.com.com?Subject=Let's%20Talk" x-show="hide"
+                        class="text-md font-bold text-white px-5 py-3 rounded-3xl bg-faisal-brand hover:bg-indigo-600 transition duration-300">Let's
+                        Talk</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Landing page -->
+        <section x-intersect="shown = true" class="">
+            <div class="min-h-screen max-w-6xl m-auto flex items-center">
+                <div class="grid grid-cols-3 items-center px-5">
+                    <div class="col-span-2 flex-col justify-center">
+                        <div class="py-5">
+                            <h3 x-show="shown" x-transition.duration.800ms
+                                class="font-noraml text-xl text-slate-400 py-1">
+                                Faisal Almahmoud - UX Designer at Al Rajhi Bank
+                            </h3>
+                            <h1 x-show="shown" x-transition.duration.600ms class="font-bold text-6xl text-indigo-900">
+                                I'll take care of your UX
+                            </h1>
+                        </div>
+
+                        <div x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true"
+                            x-intersect:enter="hide = false"
+                            class="flex justify-center items-center w-40 py-5 text-xl font-bold text-white rounded-full bg-faisal-brand hover:bg-indigo-600 transition duration-300">
+                            <a href="mailto:faisaljob06@gmail.com.com?Subject=Let's%20Talk">Let's Talk</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img x-show="shown" x-transition.duration.1000ms src="/assets/faisal-logo.svg" alt="faisal-logo"
+                            class="shadow-xl rounded-full shadow-faisal-brand/5 hidden md:block">
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/go-down.svg" alt="Go Down" class="m-auto -my-16 h-12 animate-bounce">
+        </section>
+
+        <!-- About me  -->
+        <section class="py-24" id="aboutMe">
+            <div class="sm:min-h-screen max-w-6xl m-auto py-20">
+                <div class="p-5 flex items-center justify-center">
+                    <div class="space-y-2">
+                        <h1 class="font-bold text-6xl text-indigo-900">About me</h1>
+                        <div Class="h-5 bg-faisal-brand rounded-full"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 my-12 items-center">
+                    <div class="flex justify-center p-5">
+                        <img src="/assets/faisal-photo.png" alt="faisal-logo"
+                            class="rounded-full shadow-xl shadow-faisal-brand/5 w-40 md:w-full">
+                    </div>
+                    <div class="p-5">
+                        <p class="font-normal text-3xl text-slate-500 text-center md:text-left">
+                            UX/UI Designer & Graphic Designer & Micro Animator who love to build powerful and elegant
+                            products and interactions with three years of experience in the tech industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My work -->
+        <section class="bg-slate-100 py-32 rounded-t-3xl" id="myWork">
+            <div class="min-h-screen max-w-6xl m-auto">
+                <div class="py-12 flex items-center justify-center">
+                    <div class="space-y-2">
+                        <h1 class="font-bold text-6xl text-indigo-900">My work</h1>
+                        <div Class="h-5 bg-faisal-brand rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2">
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/MPIN-proj.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <!-- <p class="text-faisal-brand text-xs font-semibold">
+                                    2 MIN
+                                </p> -->
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Quick Login
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/Banner-adds.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <!-- <p class="text-faisal-brand text-xs font-semibold">
+                                    2 MIN
+                                </p> -->
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Banner Advertisements
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/AutoLease-proj.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <!-- <p class="text-faisal-brand text-xs font-semibold">
+                                    2 MIN
+                                </p> -->
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Auto Lease
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets//eDoc-pdf.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <!-- <p class="text-faisal-brand text-xs font-semibold">
+                                    2 MIN
+                                </p> -->
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    eDocuments Templates
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/Takaful-proj.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <!-- <p class="text-faisal-brand text-xs font-semibold">
+                                    2 MIN
+                                </p> -->
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Takaful AlRajhi Insurance
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-faisal-brand w-full py-8 rounded-t-3xl">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="pt-8 flex max-w-xs mx-auto items-center justify-between">
+
+                    <a href="#" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
+                            viewBox="0 0 1792 1792">
+                            <path
+                                d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                            </path>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
