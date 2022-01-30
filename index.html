@@ -13,7 +13,7 @@
     <script defer src="/node_modules/alpinejs/dist/cdn.min.js"></script> -->
 </head>
 
-<body x-data="{ shown: false, hide: false, splash: true, isDark: false}">
+<body x-data="{ shown: false, hide: false, splash: true, isDark: false, showBar: false}">
     <!-- <div id="app"></div> -->
 
     <!-- Dark Mode -->
@@ -26,7 +26,8 @@
 
         <!-- Navbar -->
         <nav class="fixed w-full bg-white z-10"
-            :class="hide ? 'shadow-lg shadow-faisal-brand/5 transition duration-500' : '' ">
+         @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+            :class="showBar ? 'shadow-lg shadow-faisal-brand/5 transition duration-500' : '' ">
             <div class="max-w-6xl m-auto flex justify-between items-center p-5">
                 <a href="/">
                     <img src="/assets/faisal-logo.svg" alt="faisal-logo" class="w-12"></a>
