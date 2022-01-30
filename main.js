@@ -6,12 +6,12 @@
 // `
 
 
-// window.Alpine = Alpine
-// Alpine.start()
+window.Alpine = Alpine
+Alpine.start()
 
-// window.intersect = Alpine
-// Alpine.plugin(intersect)
+window.intersect = Alpine
+Alpine.plugin(intersect)
 
-$(window).load(function() {
-    $("body").removeClass("preload");
-  });
+// $(window).load(function() {
+//     $("body").removeClass("preload");
+//   });
