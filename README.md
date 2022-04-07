@@ -1,3 +1,3 @@
 # faisal-portfolio
 
-My Personal Portfolio i've codded my self with **Vite JS**, **Tailwind CSS** and **Alpine JS**
+My Personal Portfolio I've codded my self with my personal favourite framework **Vite JS**, **Tailwind CSS** and **Alpine JS** 💜 💜 💜
