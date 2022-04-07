@@ -6,24 +6,26 @@
     <link rel="icon" type="image/svg+xml" href="/assets/faisal-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Primary Meta Tags -->
-<title>Faisal's Portfolio</title>
-<meta name="title" content="Faisal's Portfolio">
-<meta name="description" content="Check my portfolio and contact me">
+    <!-- Primary Meta Tags -->
+    <title>Faisal's Portfolio</title>
+    <meta name="title" content="Faisal's Portfolio">
+    <meta name="description" content="Check my portfolio and contact me">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://faisalux.me">
-<meta property="og:title" content="Faisal's Portfolio">
-<meta property="og:description" content="Check my portfolio and contact me">
-<meta property="og:image" content="https://github.com/faisalalmahmoud/faisal-portfolio/blob/97ea155d40c9b6cbb7e858a2913897ab0236269f/assets/Thumbnail.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faisalux.me">
+    <meta property="og:title" content="Faisal's Portfolio">
+    <meta property="og:description" content="Check my portfolio and contact me">
+    <meta property="og:image"
+        content="https://github.com/faisalalmahmoud/faisal-portfolio/blob/97ea155d40c9b6cbb7e858a2913897ab0236269f/assets/Thumbnail.png">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://faisalux.me">
-<meta property="twitter:title" content="Faisal's Portfolio">
-<meta property="twitter:description" content="Check my portfolio and contact me">
-<meta property="twitter:image" content="https://github.com/faisalalmahmoud/faisal-portfolio/blob/97ea155d40c9b6cbb7e858a2913897ab0236269f/assets/Thumbnail.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faisalux.me">
+    <meta property="twitter:title" content="Faisal's Portfolio">
+    <meta property="twitter:description" content="Check my portfolio and contact me">
+    <meta property="twitter:image"
+        content="https://github.com/faisalalmahmoud/faisal-portfolio/blob/97ea155d40c9b6cbb7e858a2913897ab0236269f/assets/Thumbnail.png">
 
     <link rel="stylesheet" href="/style.css">
     <title>Faisal's Portfolio</title>
@@ -45,8 +47,7 @@
             class="fixed min-h-screen w-full bg-faisal-brand z-50"></dive>
 
         <!-- Navbar -->
-        <nav class="fixed w-full bg-white z-10"
-         @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+        <nav class="fixed w-full bg-white z-10" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
             :class="showBar ? 'shadow-lg shadow-faisal-brand/5 transition duration-500' : '' ">
             <div class="max-w-6xl m-auto flex justify-between items-center p-5">
                 <a href="/">
@@ -106,8 +107,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 my-12 items-center">
                     <div class="flex justify-center p-5">
-                        <img src="/assets/faisal-photo.jpeg" alt="faisal-logo"
-                            class="rounded-full w-72 md:w-full">
+                        <img src="/assets/faisal-photo.jpeg" alt="faisal-logo" class="rounded-full w-72 md:w-full">
                     </div>
                     <div class="p-5">
                         <p class="font-normal text-3xl text-slate-500 text-center md:text-left -m-2">
@@ -133,12 +133,84 @@
 
                     <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
                         <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/Non-Customer.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2022
+                                </p>
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Non-Customer View / Tab Navigation </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/PFM.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2021
+                                </p>
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Personal Finance Managment </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/Takaful.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2021
+                                </p>
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Takaful AlRajhi Insurance
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/eDoc-pdf.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2021
+                                </p>
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    eDocuments Templates
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
+                            <img alt="blog photo" src="/assets/AutoLease.png"
+                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="bg-white w-full p-5">
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2021
+                                </p>
+                                <p class="text-slate-800 text-xl font-semibold mb-2">
+                                    Auto Lease
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
+                        <a href="#" class="w-full block h-full">
                             <img alt="blog photo" src="/assets/MPIN-proj.png"
                                 class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
                             <div class="bg-white w-full p-5">
-                                <!-- <p class="text-faisal-brand text-xs font-semibold">
-                                    2 MIN
-                                </p> -->
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2020
+                                </p>
                                 <p class="text-slate-800 text-xl font-semibold mb-2">
                                     Quick Login
                                 </p>
@@ -151,60 +223,30 @@
                             <img alt="blog photo" src="/assets/Banner-adds.png"
                                 class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
                             <div class="bg-white w-full p-5">
-                                <!-- <p class="text-faisal-brand text-xs font-semibold">
-                                    2 MIN
-                                </p> -->
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2020
+                                </p>
                                 <p class="text-slate-800 text-xl font-semibold mb-2">
                                     Banner Advertisements
                                 </p>
                             </div>
                         </a>
                     </div>
-
                     <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
                         <a href="#" class="w-full block h-full">
-                            <img alt="blog photo" src="/assets/AutoLease-proj.png"
+                            <img alt="blog photo" src="/assets/Aman.png"
                                 class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
                             <div class="bg-white w-full p-5">
-                                <!-- <p class="text-faisal-brand text-xs font-semibold">
-                                    2 MIN
-                                </p> -->
+                                <p class="text-faisal-brand text-xs font-semibold">
+                                    2020
+                                </p>
                                 <p class="text-slate-800 text-xl font-semibold mb-2">
-                                    Auto Lease
+                                    Aman AlRajhi Revamp
                                 </p>
                             </div>
                         </a>
                     </div>
 
-                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
-                        <a href="#" class="w-full block h-full">
-                            <img alt="blog photo" src="/assets//eDoc-pdf.png"
-                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
-                            <div class="bg-white w-full p-5">
-                                <!-- <p class="text-faisal-brand text-xs font-semibold">
-                                    2 MIN
-                                </p> -->
-                                <p class="text-slate-800 text-xl font-semibold mb-2">
-                                    eDocuments Templates
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="overflow-hidden shadow-xl shadow-faisal-brand/5 rounded-3xl cursor-pointer m-5 group">
-                        <a href="#" class="w-full block h-full">
-                            <img alt="blog photo" src="/assets/Takaful-proj.png"
-                                class="max-h-40 w-full object-cover group-hover:scale-105 transition duration-500" />
-                            <div class="bg-white w-full p-5">
-                                <!-- <p class="text-faisal-brand text-xs font-semibold">
-                                    2 MIN
-                                </p> -->
-                                <p class="text-slate-800 text-xl font-semibold mb-2">
-                                    Takaful AlRajhi Insurance
-                                </p>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -214,7 +256,8 @@
             <div class="max-w-screen-xl mx-auto px-4">
                 <div class="pt-8 flex max-w-xs mx-auto items-center justify-between">
 
-                    <a href="https://twitter.com/Faisal_UX" target="_blank" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                    <a href="https://twitter.com/Faisal_UX" target="_blank"
+                        class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                             class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
                             viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +266,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://github.com/faisalalmahmoud" target="_blank" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                    <a href="https://github.com/faisalalmahmoud" target="_blank"
+                        class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
                             viewBox="0 0 1792 1792">
@@ -232,7 +276,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/faisalalmahmoud/" target="_blank" class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
+                    <a href="https://www.linkedin.com/in/faisalalmahmoud/" target="_blank"
+                        class="text-slate-100 hover:text-slate-800  transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                             class="text-xl hover:text-slate-800 dark:hover:text-white transition-colors duration-200"
                             viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
