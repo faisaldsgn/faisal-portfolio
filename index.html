@@ -84,13 +84,14 @@
                                 Simplicity is my code ✨
                             </h1>
                         </div>
-                    <div>
-                        <a x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true"
+
+                        <div x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true"
                             x-intersect:enter="hide = false"
-                            class="flex justify-center items-center w-40 py-5 text-xl font-bold text-white rounded-full bg-faisal-brand hover:bg-indigo-600 transition duration-300"
-                            href="mailto:faisaljob06@gmail.com.com?Subject=Let's%20Talk">Let's Talk</a>
+                            class="flex justify-center items-center w-40 py-5 text-xl font-bold text-white rounded-full bg-faisal-brand hover:bg-indigo-600 transition duration-300">
+                            <a href="mailto:faisaljob06@gmail.com.com?Subject=Let's%20Talk">Let's Talk</a>
                         </div>
-                </div>
+                    </div>
+
                     <div class="absolute">
                         <img x-show="shown" x-transition.duration.1000ms src="/assets/Thumbnail.png" alt="faisal-logo"
                             class="hidden xl:block">
