@@ -85,13 +85,12 @@
                             </h1>
                         </div>
 
-                        <div x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true"
+                        <div x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true"></div>
                             x-intersect:enter="hide = false"
                             class="flex justify-center items-center w-40 py-5 text-xl font-bold text-white rounded-full bg-faisal-brand hover:bg-indigo-600 transition duration-300">
-                            <a href="mailto:faisaluxservices@gmail.com?Subject=Let's%20Talk"
-                            class="text-xs md:text-base font-bold text-white md:px-5 md:py-3 px-3 py-2 rounded-3xl bg-faisal-brand hover:bg-indigo-600 transition duration-300">Let's
-                            Talk</a>
-                        </div>
+                           <a href="mailto:faisaluxservices@gmail.com?Subject=Let's%20Talk" x-show="hide"
+                        class="text-xs md:text-base font-bold text-white md:px-5 md:py-3 px-3 py-2 rounded-3xl bg-faisal-brand hover:bg-indigo-600 transition duration-300">Let's
+                        Talk</a>
                     </div>
 
                     <div class="absolute">
