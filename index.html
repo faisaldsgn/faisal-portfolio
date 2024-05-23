@@ -47,7 +47,7 @@
             class="fixed min-h-screen w-full bg-faisal-brand z-50"></dive>
 
         <!-- Navbar -->
-        <nav class="fixed w-full bg-white z-10" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
+        <nav class="fixed w-full bg-white z-20" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
             :class="showBar ? 'shadow-lg shadow-faisal-brand/5 transition duration-500' : '' ">
             <div class="max-w-6xl m-auto flex justify-between items-center p-5">
                 <div class="flex space-x-4"> 
@@ -74,7 +74,7 @@
         <section x-intersect="shown = true" class="relative">
             <div class="min-h-screen max-w-6xl m-auto flex items-center">
                 <div class="flex items-center px-5">
-                    <div class="col-span-2 flex-col justify-center">
+                    <div class="col-span-2 flex-col justify-center z-10">
                         <div class="py-5">
                             <h3 x-show="shown" x-transition.duration.800ms
                                 class="font-noraml text-xl text-slate-400 py-1">
@@ -84,7 +84,7 @@
                                 Simplicity is my code ✨
                             </h1>
                         </div>
-                        <a href="mailto:faisaljob06@gmail.com.com?Subject=Let's%20Talk" x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true" x-intersect:enter="hide = false"
+                        <a href="mailto:faisaluxservices@gmail.com?Subject=Let's%20Talk" x-show="shown" x-transition.duration.1000ms x-intersect:leave="hide = true" x-intersect:enter="hide = false"
                             class="flex justify-center items-center w-40 py-5 text-xl font-bold text-white rounded-full bg-faisal-brand hover:bg-indigo-600 transition duration-300">
                             Let's Talk
                         </a>
