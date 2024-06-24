@@ -27,7 +27,19 @@
     <meta property="twitter:image"
         content="https://framerusercontent.com/images/tffSzy8x0aYSretKBsUzeWKjCs.png">
 
-    <link href="/src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'faisal-brand': '#7D7AFB',
+              }
+            }
+          }
+        }
+      </script>
+
     <title>Faisal's Portfolio</title>
     <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
